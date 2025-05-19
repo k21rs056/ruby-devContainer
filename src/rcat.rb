@@ -1,3 +1,4 @@
+#! /usr/bin/env ruby
 
 ARGV.each do |args|
   File.open(args,"r") do |file|
