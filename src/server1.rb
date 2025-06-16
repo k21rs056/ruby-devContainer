@@ -10,6 +10,8 @@ end
 
 s0 = TCPServer.open(80)
 while sock = s0.accept
-  server sock
+  Thread.new do
+    server sock
+  end
 end
 s0.close
